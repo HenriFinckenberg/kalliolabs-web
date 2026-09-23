@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -55,6 +56,15 @@ export default function JoePage() {
               <li>Easy to pick up, hard to put down</li>
               <li>The smarter you get, the harder it becomes to stop</li>
             </ul>
+
+            <h2>Privacy Policy</h2>
+            <p>
+              Your privacy is important to us. Read our{" "}
+              <Link href="/joe-privacy-policy.html" className="privacy-link">
+                Privacy Policy
+              </Link>{" "}
+              to understand how we collect and use your data.
+            </p>
           </div>
         </section>
       </main>
