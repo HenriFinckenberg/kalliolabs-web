@@ -65,6 +65,15 @@ export default function JoePage() {
               </Link>{" "}
               to understand how we collect and use your data.
             </p>
+
+            <h2>Terms and Conditions</h2>
+            <p>
+              By playing Joe!, you agree to our{" "}
+              <Link href="/joe-terms.html" className="privacy-link">
+                Terms and Conditions
+              </Link>
+              .
+            </p>
           </div>
         </section>
       </main>
