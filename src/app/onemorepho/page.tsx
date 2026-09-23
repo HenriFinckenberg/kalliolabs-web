@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppStoreButton from "@/components/AppStoreButton";
 
 export const metadata: Metadata = {
   title: "One More Pho - Kallio Labs",
@@ -31,22 +32,7 @@ export default function OneMorePhoPage() {
                 through the leaderboards!
               </p>
               <div className="game-links">
-                <a
-                  href="https://apps.apple.com/fi/app/one-more-pho/id6744386660"
-                  className="app-store-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download on App Store
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.kalliolabs.onemorepho"
-                  className="play-store-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download on Play Store
-                </a>
+                <AppStoreButton href="https://apps.apple.com/fi/app/one-more-pho/id6744386660" />
               </div>
             </div>
           </div>

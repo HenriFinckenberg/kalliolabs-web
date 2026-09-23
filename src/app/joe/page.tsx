@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AppStoreButton from "@/components/AppStoreButton";
 
 export const metadata: Metadata = {
   title: "Joe! - Kallio Labs",
@@ -32,14 +33,7 @@ export default function JoePage() {
                 you get, the harder it becomes to stop.
               </p>
               <div className="game-links">
-                <a
-                  href="https://apps.apple.com/app/id6814485401"
-                  className="app-store-button"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Download on App Store
-                </a>
+                <AppStoreButton href="https://apps.apple.com/app/id6814485401" />
               </div>
             </div>
           </div>

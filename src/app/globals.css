@@ -244,6 +244,7 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 10px 20px;
   background-color: #000;
   color: white;
@@ -254,6 +255,12 @@ section {
   transition: all 0.3s ease;
   margin-top: auto;
   width: fit-content;
+}
+
+.store-button-icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
 }
 
 .play-store-button {
