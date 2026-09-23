@@ -1,69 +1,134 @@
+import Link from "next/link";
 import Image from "next/image";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <>
+      <Navbar homeAnchors />
+      <main>
+        <section className="hero">
+          <div className="hero-content">
+            <h1>Crafting satisfying.</h1>
+            <p className="subtitle">
+              Independent game developer creating addictive mobile games
+            </p>
+          </div>
+        </section>
+
+        <section id="work" className="work-section">
+          <h2>Projects</h2>
+          <div className="project-grid">
+            <div className="project-card">
+              <Link href="/onemorepho" className="project-link">
+                <div
+                  className="project-image"
+                  style={{
+                    backgroundImage: "url('/Onemorepho.png')",
+                    backgroundSize: "cover",
+                  }}
+                />
+                <h3>One More Pho</h3>
+                <p>
+                  Make the biggest pho-soup in the world! Stack endless layers
+                  of noodles with super fun noodle physics and challenge
+                  yourself to create the tallest, most delicious pho ever.
+                </p>
+              </Link>
+              <div className="store-buttons">
+                <a
+                  href="https://apps.apple.com/fi/app/one-more-pho/id6744386660"
+                  className="app-store-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download on App Store
+                </a>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.kalliolabs.onemorepho"
+                  className="play-store-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download on Play Store
+                </a>
+              </div>
+            </div>
+            <div className="project-card">
+              <Link href="/joe" className="project-link">
+                <div
+                  className="project-image"
+                  style={{
+                    backgroundImage: "url('/coverjoe.png')",
+                    backgroundSize: "cover",
+                  }}
+                />
+                <h3>Joe!</h3>
+                <p>
+                  Meet Joe. He&apos;s on a mission to become as smart as
+                  possible. Collect brain cells, discover new skills, and merge
+                  everything you collect into Joe&apos;s head to increase his
+                  IQ.
+                </p>
+              </Link>
+              <div className="store-buttons">
+                <a
+                  href="https://apps.apple.com/app/id6814485401"
+                  className="app-store-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Download on App Store
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" className="about-section">
+          <h2>About</h2>
+          <div className="about-content">
+            <div className="about-image">
+              <Image
+                src="/mystery.jpg"
+                alt="Henri - Game Developer"
+                width={500}
+                height={500}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </div>
+            <div className="about-text">
+              <p>
+                Hi, I&apos;m Henri, a solo game developer creating mobile games,
+                based in Helsinki, Finland. I&apos;m passionate about making
+                fun, simple, but addictive games for mobile players.
+              </p>
+              <p>
+                I handle everything from game design to coding, and I put my
+                heart into every project. My goal is to make games that are
+                enjoyable and engaging.
+              </p>
+              <p>
+                Thanks for checking out my work! Stay tuned for more games
+                coming soon!
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="contact-section">
+          <h2>Get in Touch</h2>
+          <p>
+            Have a question? Report a bug? Give feedback, ideas? Reach out, and
+            I&apos;ll get back to you as soon as I can.
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
+          <a href="mailto:contact@kalliolabs.com" className="contact-button">
+            Contact Me
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        </section>
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }
