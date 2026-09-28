@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppStoreButton from "@/components/AppStoreButton";
+import BrowserPlayButton from "@/components/BrowserPlayButton";
 
 export default function HomePage() {
   return (
@@ -60,6 +61,25 @@ export default function HomePage() {
               </Link>
               <div className="store-buttons">
                 <AppStoreButton href="https://apps.apple.com/app/id6814485401" />
+              </div>
+            </div>
+            <div className="project-card">
+              <Link href="/matchstick" className="project-link">
+                <div
+                  className="project-image"
+                  style={{
+                    backgroundImage: "url('/covermatchstick.png')",
+                    backgroundSize: "cover",
+                  }}
+                />
+                <h3>Matchstick.Club</h3>
+                <p>
+                  A tiny web game: strike a match and keep it burning for as
+                  long as you can.
+                </p>
+              </Link>
+              <div className="store-buttons">
+                <BrowserPlayButton href="https://matchstick.club" />
               </div>
             </div>
           </div>
