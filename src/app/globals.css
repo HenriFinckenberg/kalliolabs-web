@@ -194,7 +194,12 @@ section {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Cap cards at a third of the row so a lone card isn't stretched full width */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, calc((100% - 80px) / 3))
+  );
+  justify-content: center;
   gap: 40px;
   margin-top: 60px;
 }
