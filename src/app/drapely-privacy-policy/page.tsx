@@ -97,7 +97,8 @@ export default function DrapelyPrivacyPolicyPage() {
 
             <h2>3. AI Processing</h2>
             <p>
-              Try-on images are created with Google&apos;s Gemini AI. When you
+              Try-on images are created with Google&apos;s Gemini AI, which
+              Google provides to us as a data processor. When you
               start a try-on, your photo and the garment photo are sent to
               Google with the request, and the result is sent back to the app.
               We also send garment photos to Gemini to recognise the type of
@@ -110,7 +111,8 @@ export default function DrapelyPrivacyPolicyPage() {
             <h2>4. Where Your Data Is Stored</h2>
             <p>
               Your data is stored on your device and in your Drapely account,
-              which runs on Google Firebase. Our database and server functions
+              which runs on Google Firebase, provided to us by Google as a data
+              processor. Our database and server functions
               are hosted in the European Union. Only you can access the photos,
               measurements and looks in your account.
             </p>
@@ -128,32 +130,53 @@ export default function DrapelyPrivacyPolicyPage() {
               websites.
             </p>
 
-            <h2>6. Third-Party Services</h2>
+            <h2>6. Data Processors</h2>
             <p>
-              We use the following third-party services, which process data on
-              our behalf or according to their own privacy policies:
+              We use Google as a data processor. Google processes your personal
+              data only on our behalf and on our instructions, under
+              Google&apos;s data processing terms, and may not use it for its
+              own purposes:
             </p>
             <ul>
               <li>
-                Google Firebase (accounts, database, storage and servers) –{" "}
+                <strong>Google Firebase</strong> (accounts, database, file
+                storage and servers): stores your profile, photos, measurements
+                and looks, and runs the servers that power the App –{" "}
                 <a
                   href="https://firebase.google.com/support/privacy"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Firebase Privacy
+                  Firebase Privacy and Security
                 </a>
               </li>
               <li>
-                Google Gemini API (AI try-ons and size charts) –{" "}
+                <strong>Google Gemini API</strong> (AI try-ons, clothing
+                recognition and size charts): receives your photos, garment
+                photos and product links to create try-ons and read size charts,
+                as described in section 3 –{" "}
                 <a
-                  href="https://policies.google.com/privacy"
+                  href="https://ai.google.dev/gemini-api/terms"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Google Privacy Policy
+                  Gemini API Terms
                 </a>
               </li>
+            </ul>
+            <p>
+              Google may process data outside the European Union. Where it
+              does, the transfer is protected by Google&apos;s data processing
+              terms, including the European Commission&apos;s Standard
+              Contractual Clauses.
+            </p>
+
+            <h2>7. Other Third-Party Services</h2>
+            <p>
+              The following services are used when you choose them, and process
+              data according to their own privacy policies:
+            </p>
+            <ul>
               <li>
                 Google Sign-In (optional) –{" "}
                 <a
@@ -177,7 +200,7 @@ export default function DrapelyPrivacyPolicyPage() {
               </li>
             </ul>
 
-            <h2>7. How Long We Keep Your Data</h2>
+            <h2>8. How Long We Keep Your Data</h2>
             <ul>
               <li>
                 We keep your photos, measurements and looks until you delete
@@ -198,7 +221,7 @@ export default function DrapelyPrivacyPolicyPage() {
               </li>
             </ul>
 
-            <h2>8. Your Choices and Rights</h2>
+            <h2>9. Your Choices and Rights</h2>
             <ul>
               <li>
                 You can delete individual looks at any time. This removes them
@@ -228,7 +251,7 @@ export default function DrapelyPrivacyPolicyPage() {
               keeping Drapely secure.
             </p>
 
-            <h2>9. Children&apos;s Privacy</h2>
+            <h2>10. Children&apos;s Privacy</h2>
             <p>
               Drapely is not intended for children under 13. We do not
               knowingly collect personal information from children. If you
@@ -236,14 +259,14 @@ export default function DrapelyPrivacyPolicyPage() {
               contact us and we will delete it.
             </p>
 
-            <h2>10. Changes to This Policy</h2>
+            <h2>11. Changes to This Policy</h2>
             <p>
               We may update this Privacy Policy from time to time. The
               &quot;Last Updated&quot; date at the top of this page will change
               when we do.
             </p>
 
-            <h2>11. Contact Us</h2>
+            <h2>12. Contact Us</h2>
             <p>
               If you have any questions about this Privacy Policy, please contact
               us at{" "}
