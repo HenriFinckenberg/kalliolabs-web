@@ -49,8 +49,11 @@ export default function DrapelyPrivacyPolicyPage() {
               <li>
                 <strong>Account Information:</strong> If you sign in with Apple
                 or Google, we receive your name and the email address the
-                provider shares with us. If you use Drapely without signing in,
-                we create an anonymous account identifier.
+                provider shares with us. If you sign up with email and password,
+                we receive your email address and whether you have verified it.
+                Your password is stored only in encrypted (hashed) form, and we
+                can never see it. If you use Drapely without signing in, we
+                create an anonymous account identifier.
               </li>
               <li>
                 <strong>Purchases:</strong> Subscriptions are processed by
@@ -140,8 +143,10 @@ export default function DrapelyPrivacyPolicyPage() {
             <ul>
               <li>
                 <strong>Google Firebase</strong> (accounts, database, file
-                storage and servers): stores your profile, photos, measurements
-                and looks, and runs the servers that power the App –{" "}
+                storage and servers): manages sign-in, sends account
+                verification and password reset emails, stores your profile,
+                photos, measurements and looks, and runs the servers that power
+                the App –{" "}
                 <a
                   href="https://firebase.google.com/support/privacy"
                   target="_blank"
@@ -207,7 +212,8 @@ export default function DrapelyPrivacyPolicyPage() {
                 them or delete your account.
               </li>
               <li>
-                Accounts that were never signed in with Apple or Google, have
+                Accounts that were never signed in with Apple, Google or email,
+                have
                 been inactive for 60 days and have no active subscription are
                 deleted automatically, together with their data.
               </li>

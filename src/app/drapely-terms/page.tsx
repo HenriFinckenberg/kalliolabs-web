@@ -53,10 +53,11 @@ export default function DrapelyTermsPage() {
 
             <h2>3. Your Account</h2>
             <p>
-              You can use Drapely without signing in, or sign in with Apple or
-              Google to keep your looks in your account. You are responsible for
-              activity on your account. You can delete your account and data at
-              any time in the App under Profile.
+              You can use Drapely without signing in, or sign in with Apple,
+              Google, or an email and password to keep your looks in your
+              account. You are responsible for activity on your account and for
+              keeping your password secure. You can delete your account and
+              data at any time in the App under Profile.
             </p>
 
             <h2>4. Free Try-Ons and Subscriptions</h2>
