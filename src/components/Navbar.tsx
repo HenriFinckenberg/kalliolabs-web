@@ -5,7 +5,8 @@ type NavbarProps = {
 };
 
 export default function Navbar({ homeAnchors = false }: NavbarProps) {
-  const workHref = homeAnchors ? "#work" : "/#work";
+  const gamesHref = homeAnchors ? "#games" : "/#games";
+  const appsHref = homeAnchors ? "#apps" : "/#apps";
   const aboutHref = homeAnchors ? "#about" : "/#about";
   const contactHref = homeAnchors ? "#contact" : "/#contact";
 
@@ -16,7 +17,8 @@ export default function Navbar({ homeAnchors = false }: NavbarProps) {
           Kallio Labs
         </Link>
         <div className="nav-links">
-          <Link href={workHref}>Work</Link>
+          <Link href={gamesHref}>Games</Link>
+          <Link href={appsHref}>Apps</Link>
           <Link href={aboutHref}>About</Link>
           <Link href={contactHref}>Contact</Link>
         </div>

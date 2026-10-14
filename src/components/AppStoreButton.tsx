@@ -1,5 +1,6 @@
 type AppStoreButtonProps = {
-  href: string;
+  // Omit while the app is not yet live to show a "Coming soon" badge.
+  href?: string;
 };
 
 function AppleLogo() {
@@ -19,6 +20,15 @@ function AppleLogo() {
 }
 
 export default function AppStoreButton({ href }: AppStoreButtonProps) {
+  if (!href) {
+    return (
+      <span className="app-store-button coming-soon">
+        <AppleLogo />
+        Coming soon on App Store
+      </span>
+    );
+  }
+
   return (
     <a
       href={href}

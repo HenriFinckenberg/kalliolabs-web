@@ -14,13 +14,13 @@ export default function HomePage() {
           <div className="hero-content">
             <h1>Crafting satisfying.</h1>
             <p className="subtitle">
-              Independent game developer creating addictive mobile games
+              Independent studio crafting addictive mobile games and apps
             </p>
           </div>
         </section>
 
-        <section id="work" className="work-section">
-          <h2>Projects</h2>
+        <section id="games" className="work-section">
+          <h2>Games</h2>
           <div className="project-grid">
             <div className="project-card">
               <Link href="/onemorepho" className="project-link">
@@ -80,6 +80,31 @@ export default function HomePage() {
               </Link>
               <div className="store-buttons">
                 <BrowserPlayButton href="https://matchstick.club" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="apps" className="work-section">
+          <h2>Apps</h2>
+          <div className="project-grid">
+            <div className="project-card">
+              <Link href="/drapely" className="project-link">
+                <div
+                  className="project-image"
+                  style={{
+                    backgroundImage: "url('/coverdrapely.png')",
+                    backgroundSize: "cover",
+                  }}
+                />
+                <h3>Drapely</h3>
+                <p>
+                  See it on you before you buy. Try on clothes virtually with
+                  AI and find the size that actually fits you.
+                </p>
+              </Link>
+              <div className="store-buttons">
+                <AppStoreButton />
               </div>
             </div>
           </div>

@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
       { source: "/onemorepho.html", destination: "/onemorepho" },
       { source: "/joe.html", destination: "/joe" },
       { source: "/matchstick.html", destination: "/matchstick" },
+      { source: "/drapely.html", destination: "/drapely" },
+      { source: "/drapely-privacy-policy.html", destination: "/drapely-privacy-policy" },
+      { source: "/drapely-terms.html", destination: "/drapely-terms" },
       { source: "/index.html", destination: "/" },
     ];
   },

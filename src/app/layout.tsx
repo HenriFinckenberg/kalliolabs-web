@@ -11,11 +11,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Kallio Labs - Mobile Game Development",
-  description: "Independent game developer crafting engaging mobile games.",
+  title: "Kallio Labs - Mobile Games & Apps",
+  description: "Independent studio crafting engaging mobile games and apps.",
   openGraph: {
-    title: "Kallio Labs - Mobile Game Development",
-    description: "Independent game developer crafting engaging mobile games.",
+    title: "Kallio Labs - Mobile Games & Apps",
+    description: "Independent studio crafting engaging mobile games and apps.",
     url: "https://kalliolabs.com",
     type: "website",
     images: [
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kallio Labs - Mobile Game Development",
-    description: "Independent game developer crafting engaging mobile games.",
+    title: "Kallio Labs - Mobile Games & Apps",
+    description: "Independent studio crafting engaging mobile games and apps.",
     images: ["https://kalliolabs.com/Cover.jpg"],
   },
 };
