@@ -62,6 +62,7 @@ export default function HomePage() {
               </Link>
               <div className="store-buttons">
                 <AppStoreButton href="https://apps.apple.com/app/id6814485401" />
+                <GooglePlayButton />
               </div>
             </div>
             <div className="project-card">

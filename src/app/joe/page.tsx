@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppStoreButton from "@/components/AppStoreButton";
+import GooglePlayButton from "@/components/GooglePlayButton";
 
 export const metadata: Metadata = {
   title: "Joe! - Kallio Labs",
@@ -34,6 +35,7 @@ export default function JoePage() {
               </p>
               <div className="game-links">
                 <AppStoreButton href="https://apps.apple.com/app/id6814485401" />
+                <GooglePlayButton />
               </div>
             </div>
           </div>
