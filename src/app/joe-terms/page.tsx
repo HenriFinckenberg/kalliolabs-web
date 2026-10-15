@@ -15,7 +15,7 @@ export default function JoeTermsPage() {
       <main>
         <section className="privacy-section">
           <h1>Terms and Conditions for Joe!</h1>
-          <p className="last-updated">Last Updated: 23.09.2026</p>
+          <p className="last-updated">Last Updated: 15.10.2026</p>
 
           <div className="privacy-content">
             <p>
@@ -39,37 +39,41 @@ export default function JoeTermsPage() {
             <ul>
               <li>
                 Joe! may offer optional in-app purchases. Purchases are
-                processed by Apple through your Apple ID.
+                processed by Apple through your Apple ID on iPhone, or by Google
+                Play through your Google account on Android.
               </li>
               <li>
-                Prices are shown in the App Store before you confirm a purchase.
-                Payment is charged to your Apple ID account.
+                Prices are shown in the App Store or Google Play before you
+                confirm a purchase. Payment is charged to your Apple ID or Google
+                Play account.
               </li>
               <li>
                 We do not store your payment card details. Payment handling,
-                billing, and refunds are managed by Apple under Apple&apos;s
-                terms.
+                billing, and refunds are managed by Apple or Google under their
+                own terms.
               </li>
               <li>
-                If you need a refund, contact Apple Support. Restoring purchases
-                is available in the Game where applicable.
+                If you need a refund, contact Apple Support on iPhone or request
+                it through Google Play on Android. Restoring purchases is
+                available in the Game where applicable.
               </li>
             </ul>
 
-            <h2>3. Game Center</h2>
+            <h2>3. Game Center and Google Play Games</h2>
             <p>
-              Joe! may use Apple Game Center for leaderboards and achievements.
-              Use of Game Center is optional and subject to Apple&apos;s terms
-              and privacy policy. We are not responsible for Game Center
-              availability or for how Apple processes related data.
+              Joe! may use Apple Game Center on iPhone and Google Play Games on
+              Android for leaderboards and achievements. Use of these services
+              is optional and subject to Apple&apos;s or Google&apos;s terms and
+              privacy policies. We are not responsible for their availability or
+              for how Apple or Google process related data.
             </p>
 
             <h2>4. Game Progress</h2>
             <p>
               Progress is stored locally on your device. Uninstalling the Game,
               clearing app data, or switching devices may result in loss of
-              progress. Purchases tied to your Apple ID can usually be restored
-              after reinstalling.
+              progress. Purchases tied to your Apple ID or Google account can
+              usually be restored after reinstalling.
             </p>
 
             <h2>5. Acceptable Use</h2>

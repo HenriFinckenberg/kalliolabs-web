@@ -14,7 +14,7 @@ export default function JoePrivacyPolicyPage() {
       <main>
         <section className="privacy-section">
           <h1>Privacy Policy for Joe!</h1>
-          <p className="last-updated">Last Updated: 23.09.2026</p>
+          <p className="last-updated">Last Updated: 15.10.2026</p>
 
           <div className="privacy-content">
             <p>
@@ -31,15 +31,17 @@ export default function JoePrivacyPolicyPage() {
               </li>
               <li>
                 <strong>In-App Purchases:</strong> Purchases are processed by
-                Apple. We do not receive or store your payment card details.
-                Apple may share limited purchase information with us (such as
-                product identifiers and transaction status) so we can unlock the
-                content you bought.
+                Apple on iPhone and by Google Play on Android. We do not receive
+                or store your payment card details. Apple or Google may share
+                limited purchase information with us (such as product
+                identifiers and transaction status) so we can unlock the content
+                you bought.
               </li>
               <li>
-                <strong>Game Center:</strong> If you choose to sign in to Apple
-                Game Center, Apple may collect and manage your leaderboard scores
-                and achievements.
+                <strong>Game Center and Google Play Games:</strong> If you use
+                Apple Game Center on iPhone or Google Play Games on Android,
+                Apple or Google may collect and manage your player profile,
+                leaderboard scores and achievements.
               </li>
             </ul>
 
@@ -48,11 +50,11 @@ export default function JoePrivacyPolicyPage() {
               <li>To save your game progress locally on your device.</li>
               <li>
                 To unlock and restore in-app purchases you have made through the
-                App Store.
+                App Store or Google Play.
               </li>
               <li>
                 To track leaderboard scores and achievements through Apple Game
-                Center.
+                Center or Google Play Games.
               </li>
             </ul>
 
@@ -88,21 +90,44 @@ export default function JoePrivacyPolicyPage() {
                   Apple Privacy Policy
                 </a>
               </li>
+              <li>
+                Google Play Store / Google Play Billing (Android) –{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Privacy Policy
+                </a>
+              </li>
+              <li>
+                Google Play Games Services (Leaderboards &amp; Achievements on
+                Android) –{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Privacy Policy
+                </a>
+              </li>
             </ul>
 
             <h2>5. Your Choices</h2>
             <ul>
               <li>
-                You can manage Game Center settings in your Apple account.
+                You can manage Game Center settings in your Apple account, and
+                Google Play Games settings in the Google Play Games app or your
+                Google account.
               </li>
               <li>
-                You can manage or cancel subscriptions and view purchase history
-                through your Apple ID settings.
+                You can view your purchase history through your Apple ID
+                settings on iPhone or your Google Play account on Android.
               </li>
               <li>
                 Deleting the game will remove all locally stored progress.
-                Purchases remain tied to your Apple ID and can be restored if you
-                reinstall the game.
+                Purchases remain tied to your Apple ID or Google account and can
+                be restored if you reinstall the game.
               </li>
             </ul>
 
