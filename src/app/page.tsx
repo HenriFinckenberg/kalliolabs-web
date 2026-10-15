@@ -3,6 +3,7 @@ import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppStoreButton from "@/components/AppStoreButton";
+import GooglePlayButton from "@/components/GooglePlayButton";
 import BrowserPlayButton from "@/components/BrowserPlayButton";
 
 export default function HomePage() {
@@ -105,6 +106,7 @@ export default function HomePage() {
               </Link>
               <div className="store-buttons">
                 <AppStoreButton />
+                <GooglePlayButton />
               </div>
             </div>
           </div>

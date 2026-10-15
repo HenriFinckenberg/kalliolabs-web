@@ -4,6 +4,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import AppStoreButton from "@/components/AppStoreButton";
+import GooglePlayButton from "@/components/GooglePlayButton";
 
 export const metadata: Metadata = {
   title: "Drapely - Kallio Labs",
@@ -39,6 +40,7 @@ export default function DrapelyPage() {
               </p>
               <div className="game-links">
                 <AppStoreButton />
+                <GooglePlayButton />
               </div>
             </div>
           </div>
@@ -46,9 +48,9 @@ export default function DrapelyPage() {
           <div className="game-details">
             <h2>About the App</h2>
             <p>
-              Drapely is a virtual try-on app for iPhone. Upload a full-body
-              photo, add your height and weight, and try on clothes from any
-              store. Features:
+              Drapely is a virtual try-on app for iPhone and Android. Upload a
+              full-body photo, add your height and weight, and try on clothes
+              from any store. Features:
             </p>
             <ul>
               <li>
