@@ -14,7 +14,7 @@ export default function DrapelyPrivacyPolicyPage() {
       <main>
         <section className="privacy-section">
           <h1>Privacy Policy for Drapely</h1>
-          <p className="last-updated">Last Updated: 14.10.2026</p>
+          <p className="last-updated">Last Updated: 15.10.2026</p>
 
           <div className="privacy-content">
             <p>
@@ -57,13 +57,18 @@ export default function DrapelyPrivacyPolicyPage() {
               </li>
               <li>
                 <strong>Purchases:</strong> Subscriptions are processed by
-                Apple. We do not receive your payment card details. We receive
-                transaction information (such as product, status and renewal
-                dates) to unlock your plan and track your monthly try-ons.
+                Apple on iPhone and by Google Play on Android. We do not receive
+                your payment card details. We receive transaction information
+                (such as product, order number, status and renewal dates) to
+                unlock your plan and track your monthly try-ons.
               </li>
               <li>
-                <strong>Device Check:</strong> We use Apple DeviceCheck to keep
-                track of whether free try-ons have been used on a device. This
+                <strong>Device Check:</strong> We use Apple DeviceCheck on
+                iPhone and Google Play Integrity on Android to keep track of
+                whether free try-ons have been used on a device. Play Integrity
+                also confirms that requests come from the genuine App on a
+                genuine device. Apple and Google store a small counter for the
+                device, which stays in place if the App is reinstalled. This
                 does not identify you.
               </li>
               <li>
@@ -178,12 +183,22 @@ export default function DrapelyPrivacyPolicyPage() {
 
             <h2>7. Other Third-Party Services</h2>
             <p>
-              The following services are used when you choose them, and process
-              data according to their own privacy policies:
+              The App also uses the following services, which process data
+              according to their own privacy policies:
             </p>
             <ul>
               <li>
                 Google Sign-In (optional) –{" "}
+                <a
+                  href="https://policies.google.com/privacy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Privacy Policy
+                </a>
+              </li>
+              <li>
+                Google Play Billing and Play Integrity (Android) –{" "}
                 <a
                   href="https://policies.google.com/privacy"
                   target="_blank"
@@ -240,7 +255,8 @@ export default function DrapelyPrivacyPolicyPage() {
               </li>
               <li>
                 You can manage or cancel subscriptions through your Apple
-                Account settings.
+                Account settings on iPhone, or in the Google Play Store app on
+                Android.
               </li>
               <li>
                 Depending on where you live, you may have the right to access,

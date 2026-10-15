@@ -15,7 +15,7 @@ export default function DrapelyTermsPage() {
       <main>
         <section className="privacy-section">
           <h1>Terms and Conditions for Drapely</h1>
-          <p className="last-updated">Last Updated: 14.10.2026</p>
+          <p className="last-updated">Last Updated: 15.10.2026</p>
 
           <div className="privacy-content">
             <p>
@@ -32,7 +32,15 @@ export default function DrapelyTermsPage() {
               >
                 Standard End User License Agreement
               </a>{" "}
-              also applies.
+              also applies. If you downloaded it from Google Play, the{" "}
+              <a
+                href="https://play.google/play-terms/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Play Terms of Service
+              </a>{" "}
+              also apply.
             </p>
 
             <h2>1. License</h2>
@@ -82,17 +90,23 @@ export default function DrapelyTermsPage() {
               </li>
               <li>
                 Prices are shown in the App before you confirm a purchase.
-                Payment is charged to your Apple Account.
+                Payment is charged to your Apple Account on iPhone, or to your
+                Google Play account on Android.
               </li>
               <li>
                 Subscriptions renew automatically at the price shown until
-                cancelled. You can cancel anytime in Settings → Apple Account →
-                Subscriptions, at least 24 hours before the current period ends.
+                cancelled. On iPhone, you can cancel anytime in Settings → Apple
+                Account → Subscriptions, at least 24 hours before the current
+                period ends. On Android, you can cancel anytime in the Google
+                Play Store app under Payments &amp; subscriptions →
+                Subscriptions. You keep access until the end of the period you
+                have paid for.
               </li>
               <li>
                 We do not store your payment card details. Billing and refunds
-                are handled by Apple under Apple&apos;s terms. If you need a
-                refund, contact Apple Support. You can restore purchases in the
+                are handled by Apple or Google under their own terms. If you
+                need a refund, contact Apple Support on iPhone or request it
+                through Google Play on Android. You can restore purchases in the
                 App.
               </li>
               <li>
