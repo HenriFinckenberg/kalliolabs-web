@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 
 type NavbarProps = {
@@ -28,38 +29,54 @@ export default function Navbar({ homeAnchors = false }: NavbarProps) {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className={menuOpen ? "navbar menu-open" : "navbar"}>
-      <div className="nav-content">
-        <Link href="/" className="logo" onClick={closeMenu}>
-          Kallio Labs
-        </Link>
-        <button
-          type="button"
-          className="menu-toggle"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          aria-expanded={menuOpen}
-          aria-controls="nav-links"
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span className="menu-toggle-bar" />
-          <span className="menu-toggle-bar" />
-          <span className="menu-toggle-bar" />
-        </button>
-        <div id="nav-links" className="nav-links">
-          <Link href={gamesHref} onClick={closeMenu}>
-            Games
+    <>
+      {/* Dims the page behind the open mobile menu; tapping it closes the menu. */}
+      <div
+        className={menuOpen ? "nav-scrim is-open" : "nav-scrim"}
+        aria-hidden="true"
+        onClick={closeMenu}
+      />
+      <nav className={menuOpen ? "navbar menu-open" : "navbar"}>
+        <div className="nav-content">
+          <Link href="/" className="logo" onClick={closeMenu}>
+            <Image
+              src="/kallio-labs-logo.png"
+              alt="Kallio Labs"
+              width={924}
+              height={234}
+              sizes="140px"
+              priority
+              className="logo-image"
+            />
           </Link>
-          <Link href={appsHref} onClick={closeMenu}>
-            Apps
-          </Link>
-          <Link href={aboutHref} onClick={closeMenu}>
-            About
-          </Link>
-          <Link href={contactHref} onClick={closeMenu}>
-            Contact
-          </Link>
+          <button
+            type="button"
+            className="menu-toggle"
+            aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="nav-links"
+            onClick={() => setMenuOpen((open) => !open)}
+          >
+            <span className="menu-toggle-bar" />
+            <span className="menu-toggle-bar" />
+            <span className="menu-toggle-bar" />
+          </button>
+          <div id="nav-links" className="nav-links">
+            <Link href={gamesHref} onClick={closeMenu}>
+              Games
+            </Link>
+            <Link href={appsHref} onClick={closeMenu}>
+              Apps
+            </Link>
+            <Link href={aboutHref} onClick={closeMenu}>
+              About
+            </Link>
+            <Link href={contactHref} onClick={closeMenu}>
+              Contact
+            </Link>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }

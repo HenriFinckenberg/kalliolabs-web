@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import ParallaxBackground from "@/components/ParallaxBackground";
+import ScrollEffects from "@/components/ScrollEffects";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,10 +39,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={inter.variable} data-scroll-behavior="smooth">
       <body>
         <div className="overlay" />
-        <ParallaxBackground />
+        <ScrollEffects />
+        <ScrollIndicator />
         {children}
       </body>
     </html>

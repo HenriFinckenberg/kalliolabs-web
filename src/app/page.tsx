@@ -13,25 +13,37 @@ export default function HomePage() {
       <main>
         <section className="hero">
           <div className="hero-content">
-            <h1>Crafting satisfying.</h1>
+            <h1 className="hero-title" aria-label="Crafting satisfying.">
+              <span className="word" aria-hidden="true">
+                <span>Crafting</span>
+              </span>{" "}
+              <span className="word" aria-hidden="true">
+                <span>satisfying.</span>
+              </span>
+            </h1>
             <p className="subtitle">
               Independent studio crafting addictive mobile games and apps
             </p>
           </div>
+          <a href="#games" className="scroll-cue" aria-label="Scroll to games">
+            <span className="scroll-cue-line" />
+          </a>
         </section>
 
-        <section id="games" className="work-section">
-          <h2>Games</h2>
+        <section id="games" className="work-section" data-reveal="panel">
+          <h2 data-reveal>Games</h2>
           <div className="project-grid">
-            <div className="project-card">
+            <div className="project-card" data-reveal>
               <Link href="/onemorepho" className="project-link">
-                <div
-                  className="project-image"
-                  style={{
-                    backgroundImage: "url('/Onemorepho.png')",
-                    backgroundSize: "cover",
-                  }}
-                />
+                <div className="project-media">
+                  <div
+                    className="project-image"
+                    style={{
+                      backgroundImage: "url('/Onemorepho.png')",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                </div>
                 <h3>One More Pho</h3>
                 <p>
                   Make the biggest pho-soup in the world! Stack endless layers
@@ -43,15 +55,17 @@ export default function HomePage() {
                 <AppStoreButton href="https://apps.apple.com/fi/app/one-more-pho/id6744386660" />
               </div>
             </div>
-            <div className="project-card">
+            <div className="project-card" data-reveal>
               <Link href="/joe" className="project-link">
-                <div
-                  className="project-image"
-                  style={{
-                    backgroundImage: "url('/coverjoe.png')",
-                    backgroundSize: "cover",
-                  }}
-                />
+                <div className="project-media">
+                  <div
+                    className="project-image"
+                    style={{
+                      backgroundImage: "url('/coverjoe.png')",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                </div>
                 <h3>Joe!</h3>
                 <p>
                   Meet Joe. He&apos;s on a mission to become as smart as
@@ -65,15 +79,17 @@ export default function HomePage() {
                 <GooglePlayButton />
               </div>
             </div>
-            <div className="project-card">
+            <div className="project-card" data-reveal>
               <Link href="/matchstick" className="project-link">
-                <div
-                  className="project-image"
-                  style={{
-                    backgroundImage: "url('/covermatchstick.png')",
-                    backgroundSize: "cover",
-                  }}
-                />
+                <div className="project-media">
+                  <div
+                    className="project-image"
+                    style={{
+                      backgroundImage: "url('/covermatchstick.png')",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                </div>
                 <h3>Matchstick.Club</h3>
                 <p>
                   A tiny web game: strike a match and keep it burning for as
@@ -87,18 +103,20 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="apps" className="work-section">
-          <h2>Apps</h2>
+        <section id="apps" className="work-section" data-reveal="panel">
+          <h2 data-reveal>Apps</h2>
           <div className="project-grid">
-            <div className="project-card">
+            <div className="project-card" data-reveal>
               <Link href="/drapely" className="project-link">
-                <div
-                  className="project-image"
-                  style={{
-                    backgroundImage: "url('/coverdrapely.png')",
-                    backgroundSize: "cover",
-                  }}
-                />
+                <div className="project-media">
+                  <div
+                    className="project-image"
+                    style={{
+                      backgroundImage: "url('/coverdrapely.png')",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                </div>
                 <h3>Drapely</h3>
                 <p>
                   See it on you before you buy. Try on clothes virtually with
@@ -113,10 +131,10 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="about" className="about-section">
-          <h2>About</h2>
+        <section id="about" className="about-section" data-reveal="panel">
+          <h2 data-reveal>About</h2>
           <div className="about-content">
-            <div className="about-image">
+            <div className="about-image" data-reveal="clip">
               <Image
                 src="/mystery.jpg"
                 alt="Henri - Game Developer"
@@ -126,17 +144,17 @@ export default function HomePage() {
               />
             </div>
             <div className="about-text">
-              <p>
+              <p data-reveal>
                 Hi, I&apos;m Henri, a solo game developer creating mobile games,
                 based in Helsinki, Finland. I&apos;m passionate about making
                 fun, simple, but addictive games for mobile players.
               </p>
-              <p>
+              <p data-reveal>
                 I handle everything from game design to coding, and I put my
                 heart into every project. My goal is to make games that are
                 enjoyable and engaging.
               </p>
-              <p>
+              <p data-reveal>
                 Thanks for checking out my work! Stay tuned for more games
                 coming soon!
               </p>
@@ -144,13 +162,17 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="contact" className="contact-section">
-          <h2>Get in Touch</h2>
-          <p>
+        <section id="contact" className="contact-section" data-reveal="panel">
+          <h2 data-reveal>Get in Touch</h2>
+          <p data-reveal>
             Have a question? Report a bug? Give feedback, ideas? Reach out, and
             I&apos;ll get back to you as soon as I can.
           </p>
-          <a href="mailto:contact@kalliolabs.com" className="contact-button">
+          <a
+            href="mailto:contact@kalliolabs.com"
+            className="contact-button"
+            data-reveal
+          >
             Contact Me
           </a>
         </section>
